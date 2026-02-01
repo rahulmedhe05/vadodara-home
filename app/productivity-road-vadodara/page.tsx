@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import ProductivityRoadContent from "./ProductivityRoadContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property on Productivity Road Vadodara | Commercial & Industrial",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function ProductivityRoadVadodaraPage() {
-  return <ProductivityRoadContent />;
+  return <AreaPageTemplate area="productivity-road" areaName="Productivity Road" />;
 }

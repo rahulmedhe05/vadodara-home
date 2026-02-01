@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import AtladaraContent from "./AtladaraContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Atladara Vadodara | Budget Flats Near Industrial Area",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function AtladaraVadodaraPage() {
-  return <AtladaraContent />;
+  return <AreaPageTemplate area="atladara" areaName="Atladara" />;
 }

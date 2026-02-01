@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import TandaljaContent from "./TandaljaContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Tandalja Vadodara | Mid-Range Family Flats",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function TandaljaVadodaraPage() {
-  return <TandaljaContent />;
+  return <AreaPageTemplate area="tandalja" areaName="Tandalja" />;
 }

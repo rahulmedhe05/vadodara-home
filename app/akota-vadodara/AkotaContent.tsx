@@ -312,7 +312,7 @@ export default function AkotaContent() {
             </div>
             <div className="space-y-6">
               <img 
-                src="https://picsum.photos/seed/akota-vadodara-premium/600/400"
+                src="/images/properties/villa-1.jpg"
                 alt="Premium Real Estate in Akota Vadodara"
                 className="rounded-xl shadow-lg w-full"
               />

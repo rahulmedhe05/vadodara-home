@@ -35,7 +35,7 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
 
   return (
     <div className="min-h-screen flex flex-col">
-      <BusinessNav currentBusiness={business} currentArea="vadodara" />
+      <BusinessNav />
       
       {/* Hero Slider with Form */}
       <BusinessHeroSlider 
@@ -77,7 +77,7 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
       {/* Full Width Image Banner */}
       <section className="relative h-64 md:h-80 overflow-hidden">
         <img
-          src={`https://picsum.photos/seed/${business.slug}-${keyword.slug}-banner/1920/600`}
+          src="/images/hero/hero-3.jpg"
           alt={`${keywordName} services in Vadodara`}
           className="w-full h-full object-cover"
           loading="lazy"
@@ -113,7 +113,7 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
             </div>
             <div className="order-1 md:order-2">
               <img
-                src={`https://picsum.photos/seed/${business.slug}-${keyword.slug}-about/600/500`}
+                src="/images/properties/villa-1.jpg"
                 alt={`About ${keywordName} in Vadodara`}
                 className="w-full h-80 md:h-96 object-cover rounded-2xl shadow-xl"
                 loading="lazy"
@@ -202,11 +202,11 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
             View our recent {keywordName.toLowerCase()} projects completed across Vadodara
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[1, 2, 3, 4, 5].map((i) => (
+            {['/images/properties/flat-1.jpg', '/images/properties/house-1.jpg', '/images/properties/villa-2.jpg', '/images/properties/commercial-2.jpg', '/images/gallery/gallery-5.jpg'].map((img, i) => (
               <div key={i} className="relative group overflow-hidden rounded-xl shadow-lg">
                 <img
-                  src={`https://picsum.photos/seed/${business.slug}-${keyword.slug}-${i}/600/400`}
-                  alt={`${keywordName} project ${i} in Vadodara`}
+                  src={img}
+                  alt={`${keywordName} project ${i + 1} in Vadodara`}
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                 />
@@ -260,7 +260,7 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
             <div className="space-y-4">
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${keyword.slug}-before-1/600/400`}
+                  src="/images/properties/plot-1.jpg"
                   alt={`Before ${keywordName}`}
                   className="w-full h-64 object-cover"
                   loading="lazy"
@@ -269,7 +269,7 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
               </div>
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${keyword.slug}-after-1/600/400`}
+                  src="/images/properties/house-2.jpg"
                   alt={`After ${keywordName}`}
                   className="w-full h-64 object-cover"
                   loading="lazy"
@@ -280,7 +280,7 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
             <div className="space-y-4">
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${keyword.slug}-before-2/600/400`}
+                  src="/images/properties/plot-2.jpg"
                   alt={`Before ${keywordName} project`}
                   className="w-full h-64 object-cover"
                   loading="lazy"
@@ -289,7 +289,7 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
               </div>
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${keyword.slug}-after-2/600/400`}
+                  src="/images/properties/villa-1.jpg"
                   alt={`After ${keywordName} project`}
                   className="w-full h-64 object-cover"
                   loading="lazy"
@@ -307,7 +307,7 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
             <div>
               <img
-                src={`https://picsum.photos/seed/${business.slug}-${keyword.slug}-why/600/600`}
+                src="/images/hero/hero-1.jpg"
                 alt={`Why choose us for ${keywordName}`}
                 className="w-full h-80 md:h-[500px] object-cover rounded-2xl shadow-xl"
                 loading="lazy"
@@ -350,7 +350,7 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
                 className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all"
               >
                 <img
-                  src={`https://picsum.photos/seed/${business.slug}-area-${index}/300/200`}
+                  src={`/images/gallery/gallery-${(index % 12) + 1}.jpg`}
                   alt={`${keywordName} in ${getAreaDisplayName(area)}`}
                   className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
@@ -468,7 +468,7 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
       {/* Full Width CTA Banner */}
       <section className="relative py-20 overflow-hidden">
         <img
-          src={`https://picsum.photos/seed/${business.slug}-${keyword.slug}-cta/1920/600`}
+          src="/images/hero/hero-5.jpg"
           alt={`${keywordName} CTA`}
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"

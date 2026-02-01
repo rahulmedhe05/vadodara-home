@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import AjwaRoadContent from "./AjwaRoadContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Real Estate in Ajwa Road, Vadodara | Flats, Houses, Villas, Property for Sale & Rent",
@@ -14,5 +14,5 @@ export const metadata: Metadata = {
 };
 
 export default function AjwaRoadVadodaraPage() {
-  return <AjwaRoadContent />;
+  return <AreaPageTemplate area="ajwa-road" areaName="Ajwa Road" />;
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import ChhaniContent from "./ChhaniContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Chhani Vadodara | Affordable Plots & Flats | Emerging Investment 2025",
@@ -35,5 +35,5 @@ export const metadata: Metadata = {
 };
 
 export default function ChhaniPage() {
-  return <ChhaniContent />;
+  return <AreaPageTemplate area="chhani" areaName="Chhani" />;
 }

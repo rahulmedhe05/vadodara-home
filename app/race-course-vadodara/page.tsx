@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import RaceCourseContent from "./RaceCourseContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Race Course Vadodara | Ultra Luxury Flats & Bungalows",
@@ -13,5 +13,5 @@ export const metadata: Metadata = {
 };
 
 export default function RaceCourseVadodaraPage() {
-  return <RaceCourseContent />;
+  return <AreaPageTemplate area="race-course" areaName="Race Course" />;
 }

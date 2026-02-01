@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import TarsaliContent from "./TarsaliContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Tarsali Vadodara | Growing Suburb Flats & Plots",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function TarsaliVadodaraPage() {
-  return <TarsaliContent />;
+  return <AreaPageTemplate area="tarsali" areaName="Tarsali" />;
 }

@@ -14,57 +14,59 @@ interface BusinessHeroSliderProps {
   keyword?: string;
 }
 
-// Demo images for each business type (using picsum.photos for demo)
+// Demo images for each business type (using local images)
 const businessImages: Record<string, string[]> = {
   "interior-designers": [
-    "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&h=1080&fit=crop",
+    "/images/gallery/gallery-3.jpg",
+    "/images/gallery/gallery-5.jpg",
+    "/images/gallery/gallery-6.jpg",
   ],
   "real-estate": [
-    "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&h=1080&fit=crop",
+    "/Slider1.png",
+    "/Slider2.png",
+    "/Slider3.png",
+    "/images/hero/hero-1.jpg",
+    "/images/hero/hero-2.jpg",
   ],
   "solar-installation": [
-    "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?w=1920&h=1080&fit=crop",
+    "/images/hero/hero-1.jpg",
+    "/images/hero/hero-2.jpg",
+    "/images/hero/hero-3.jpg",
   ],
   "skin-hair": [
-    "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&h=1080&fit=crop",
+    "/images/hero/hero-1.jpg",
+    "/images/hero/hero-2.jpg",
+    "/images/hero/hero-3.jpg",
   ],
   "lawyer": [
-    "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&h=1080&fit=crop",
+    "/images/hero/hero-1.jpg",
+    "/images/hero/hero-2.jpg",
+    "/images/hero/hero-3.jpg",
   ],
   "dentists": [
-    "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=1920&h=1080&fit=crop",
+    "/images/hero/hero-1.jpg",
+    "/images/hero/hero-2.jpg",
+    "/images/hero/hero-3.jpg",
   ],
   "home-automation": [
-    "https://images.unsplash.com/photo-1558002038-1055907df827?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1585503418537-88331351ad99?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&h=1080&fit=crop",
+    "/images/hero/hero-1.jpg",
+    "/images/hero/hero-2.jpg",
+    "/images/hero/hero-3.jpg",
   ],
   "security-cctv": [
-    "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1617005082133-548c4dd27f35?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop",
+    "/images/hero/hero-1.jpg",
+    "/images/hero/hero-2.jpg",
+    "/images/hero/hero-3.jpg",
   ],
   "wedding-planners": [
-    "https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1920&h=1080&fit=crop",
+    "/images/hero/hero-1.jpg",
+    "/images/hero/hero-2.jpg",
+    "/images/hero/hero-3.jpg",
   ],
   "study-abroad": [
-    "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1562774053-701939374585?w=1920&h=1080&fit=crop",
+    "/images/hero/hero-1.jpg",
+    "/images/hero/hero-2.jpg",
+    "/images/hero/hero-3.jpg",
   ],
 };
 

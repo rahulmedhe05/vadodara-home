@@ -38,7 +38,7 @@ export function AreaPageTemplate({ area, areaName }: AreaPageTemplateProps) {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <BusinessNav currentBusiness={business} currentArea={area} />
+      <BusinessNav />
       
       <BusinessHeroSlider 
         business={business} 
@@ -120,7 +120,7 @@ export function AreaPageTemplate({ area, areaName }: AreaPageTemplateProps) {
             </div>
             <div className="relative">
               <img 
-                src={`https://picsum.photos/seed/${area}-real-estate/600/400`}
+                src="/images/properties/house-1.jpg"
                 alt={`Real Estate in ${areaName}`}
                 className="rounded-xl shadow-lg w-full"
               />

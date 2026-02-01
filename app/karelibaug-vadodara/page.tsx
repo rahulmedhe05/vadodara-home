@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import KarelibaugContent from "./KarelibaugContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Karelibaug Vadodara | Traditional Gujarati Homes | Prime Location 2025",
@@ -35,5 +35,5 @@ export const metadata: Metadata = {
 };
 
 export default function KarelibaugPage() {
-  return <KarelibaugContent />;
+  return <AreaPageTemplate area="karelibaug" areaName="Karelibaug" />;
 }

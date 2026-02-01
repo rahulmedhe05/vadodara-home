@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import GotriContent from "./GotriContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Gotri Vadodara | Flats, Plots & Villas Near IT Hub | Best Real Estate Deals 2025",
@@ -43,5 +43,5 @@ export const metadata: Metadata = {
 };
 
 export default function GotriPage() {
-  return <GotriContent />;
+  return <AreaPageTemplate area="gotri" areaName="Gotri" />;
 }

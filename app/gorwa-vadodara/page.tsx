@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import GorwaContent from "./GorwaContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Gorwa Vadodara | Flats Near IPCL & Refinery",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function GorwaVadodaraPage() {
-  return <GorwaContent />;
+  return <AreaPageTemplate area="gorwa" areaName="Gorwa" />;
 }

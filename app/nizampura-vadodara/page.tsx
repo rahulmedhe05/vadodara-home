@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import NizampuraContent from "./NizampuraContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Nizampura Vadodara | Central Location Flats",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function NizampuraVadodaraPage() {
-  return <NizampuraContent />;
+  return <AreaPageTemplate area="nizampura" areaName="Nizampura" />;
 }

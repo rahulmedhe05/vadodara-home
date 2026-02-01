@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import SayajigunjContent from "./SayajigunjContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Sayajigunj Vadodara | Flats Near MS University",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function SayajigunjVadodaraPage() {
-  return <SayajigunjContent />;
+  return <AreaPageTemplate area="sayajigunj" areaName="Sayajigunj" />;
 }

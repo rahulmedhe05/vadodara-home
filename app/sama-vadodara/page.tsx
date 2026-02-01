@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import SamaContent from "./SamaContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Sama Vadodara | Heritage Living Near Laxmi Vilas Palace | Premium Real Estate 2025",
@@ -36,5 +36,5 @@ export const metadata: Metadata = {
 };
 
 export default function SamaPage() {
-  return <SamaContent />;
+  return <AreaPageTemplate area="sama" areaName="Sama" />;
 }

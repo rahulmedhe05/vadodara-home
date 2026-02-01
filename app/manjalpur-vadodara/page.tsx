@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import ManjalPurContent from "./ManjalpurContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Manjalpur Vadodara | Affordable Flats & Plots | Industrial Hub Living 2025",
@@ -36,5 +36,5 @@ export const metadata: Metadata = {
 };
 
 export default function ManjalpurPage() {
-  return <ManjalPurContent />;
+  return <AreaPageTemplate area="manjalpur" areaName="Manjalpur" />;
 }

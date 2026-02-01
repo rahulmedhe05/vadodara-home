@@ -310,7 +310,7 @@ export default function AjwaRoadContent() {
             </div>
             <div className="space-y-6">
               <img 
-                src="https://picsum.photos/seed/ajwa-road-vadodara/600/400"
+                src="/images/properties/house-1.jpg"
                 alt="Real Estate in Ajwa Road Vadodara"
                 className="rounded-xl shadow-lg w-full"
               />

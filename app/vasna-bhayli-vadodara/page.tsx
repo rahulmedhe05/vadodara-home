@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import VasnaBhayliContent from "./VasnaBhayliContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Vasna Bhayli Vadodara | Affordable Flats & Plots",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function VasnaBhayliVadodaraPage() {
-  return <VasnaBhayliContent />;
+  return <AreaPageTemplate area="vasna-bhayli" areaName="Vasna Bhayli" />;
 }

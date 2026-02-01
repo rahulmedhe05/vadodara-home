@@ -316,7 +316,7 @@ export default function AlkapuriContent() {
             </div>
             <div className="space-y-6">
               <img 
-                src="https://picsum.photos/seed/alkapuri-vadodara-business/600/400"
+                src="/images/properties/commercial-1.jpg"
                 alt="Commercial Real Estate in Alkapuri Vadodara"
                 className="rounded-xl shadow-lg w-full"
               />

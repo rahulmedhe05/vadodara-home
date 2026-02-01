@@ -210,19 +210,60 @@ export function BusinessGallerySection({ business, keyword, area }: BusinessGall
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [visibleImages, setVisibleImages] = useState(12);
   
-  const imageIds = businessGalleryImages[business.slug] || businessGalleryImages["interior-designers"];
-  const keywordText = keyword?.keyword || business.name;
+  const keywordText = keyword?.title || business.name;
   const areaText = area?.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) || "Vadodara";
 
+  // Use local images for real estate - mix of downloaded and existing images
+  const localGalleryImages = [
+    // New downloaded images
+    "/images/gallery/gallery-1.jpg",
+    "/images/gallery/gallery-2.jpg",
+    "/images/gallery/gallery-3.jpg",
+    "/images/gallery/gallery-4.jpg",
+    "/images/gallery/gallery-5.jpg",
+    "/images/gallery/gallery-6.jpg",
+    "/images/gallery/gallery-7.jpg",
+    "/images/gallery/gallery-8.jpg",
+    "/images/gallery/gallery-9.jpg",
+    "/images/gallery/gallery-10.jpg",
+    "/images/gallery/gallery-11.jpg",
+    "/images/gallery/gallery-12.jpg",
+    // Existing property images
+    "/1.png",
+    "/2.png",
+    "/3.png",
+    "/4.png",
+    "/5.png",
+    "/6.png",
+    "/7.png",
+    "/8.png",
+    "/9.png",
+    "/10.png",
+    "/11.png",
+    "/12.png",
+    "/13.png",
+    "/14.png",
+    "/15.png",
+    "/16.png",
+    "/17.png",
+    "/18.png",
+    "/19.png",
+    "/20.png",
+    "/21.png",
+    "/22.png",
+    "/23.png",
+    "/24.png",
+  ];
+
   const images = useMemo(() => 
-    imageIds.map((id, index) => ({
+    localGalleryImages.map((url, index) => ({
       id: index + 1,
-      url: `https://images.unsplash.com/photo-${id}?w=600&h=400&fit=crop`,
-      fullUrl: `https://images.unsplash.com/photo-${id}?w=1200&h=800&fit=crop`,
+      url: url,
+      fullUrl: url,
       alt: `${keywordText} ${areaText} - Image ${index + 1}`,
       title: `${keywordText} in ${areaText} - Project ${index + 1}`,
     })),
-  [imageIds, keywordText, areaText]);
+  [keywordText, areaText]);
 
   const loadMore = useCallback(() => {
     setVisibleImages((prev) => Math.min(prev + 12, images.length));

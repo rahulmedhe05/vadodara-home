@@ -32,7 +32,7 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
 
   return (
     <div className="min-h-screen flex flex-col">
-      <BusinessNav currentBusiness={business} currentArea={area} />
+      <BusinessNav />
       
       {/* Hero Slider with Form */}
       <BusinessHeroSlider 
@@ -73,7 +73,7 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
       {/* Full Width Image Banner */}
       <section className="relative h-64 md:h-80 overflow-hidden">
         <img
-          src={`https://picsum.photos/seed/${business.slug}-banner-${area}/1920/600`}
+          src="/images/hero/hero-3.jpg"
           alt={`${business.name} services in ${areaName}`}
           className="w-full h-full object-cover"
           loading="lazy"
@@ -101,7 +101,7 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
             </div>
             <div className="order-1 md:order-2">
               <img
-                src={`https://picsum.photos/seed/${business.slug}-about-${area}/600/500`}
+                src="/images/properties/house-1.jpg"
                 alt={`About ${business.name} in ${areaName}`}
                 className="w-full h-80 md:h-96 object-cover rounded-2xl shadow-xl"
                 loading="lazy"
@@ -149,11 +149,11 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
             Take a look at some of our best {business.name.toLowerCase()} projects completed in {areaName}, Vadodara
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[1, 2, 3, 4].map((i) => (
+            {['/images/properties/flat-1.jpg', '/images/properties/house-2.jpg', '/images/properties/villa-1.jpg', '/images/properties/commercial-1.jpg'].map((img, i) => (
               <div key={i} className="relative group overflow-hidden rounded-xl shadow-lg">
                 <img
-                  src={`https://picsum.photos/seed/${business.slug}-${area}-${i}/600/400`}
-                  alt={`${business.name} project ${i} in ${areaName}`}
+                  src={img}
+                  alt={`${business.name} project ${i + 1} in ${areaName}`}
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                 />
@@ -180,7 +180,7 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
             <div className="space-y-4">
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${business.slug}-before-1/600/400`}
+                  src="/images/properties/plot-1.jpg"
                   alt={`Before ${business.name} transformation`}
                   className="w-full h-64 object-cover"
                   loading="lazy"
@@ -189,7 +189,7 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
               </div>
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${business.slug}-after-1/600/400`}
+                  src="/images/properties/house-3.jpg"
                   alt={`After ${business.name} transformation`}
                   className="w-full h-64 object-cover"
                   loading="lazy"
@@ -200,7 +200,7 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
             <div className="space-y-4">
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${business.slug}-before-2/600/400`}
+                  src="/images/properties/plot-2.jpg"
                   alt={`Before ${business.name} project`}
                   className="w-full h-64 object-cover"
                   loading="lazy"
@@ -209,7 +209,7 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
               </div>
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={`https://picsum.photos/seed/${business.slug}-after-2/600/400`}
+                  src="/images/properties/villa-2.jpg"
                   alt={`After ${business.name} project`}
                   className="w-full h-64 object-cover"
                   loading="lazy"
@@ -227,7 +227,7 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
             <div>
               <img
-                src={`https://picsum.photos/seed/${business.slug}-why-${area}/600/600`}
+                src="/images/hero/hero-2.jpg"
                 alt={`Why choose ${business.name} in ${areaName}`}
                 className="w-full h-80 md:h-[500px] object-cover rounded-2xl shadow-xl"
                 loading="lazy"
@@ -299,11 +299,11 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
-                {[1, 2, 3, 4].map((i) => (
+                {['/images/gallery/gallery-1.jpg', '/images/gallery/gallery-2.jpg', '/images/gallery/gallery-3.jpg', '/images/gallery/gallery-4.jpg'].map((img, i) => (
                   <img
                     key={i}
-                    src={`https://picsum.photos/seed/${business.slug}-local-${area}-${i}/300/300`}
-                    alt={`${business.name} work in ${areaName} ${i}`}
+                    src={img}
+                    alt={`${business.name} work in ${areaName} ${i + 1}`}
                     className="w-full h-40 object-cover rounded-xl shadow-md hover:shadow-xl transition-shadow"
                     loading="lazy"
                   />
@@ -394,7 +394,7 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
       {/* Full Width CTA Banner */}
       <section className="relative py-20 overflow-hidden">
         <img
-          src={`https://picsum.photos/seed/${business.slug}-cta-${area}/1920/600`}
+          src="/images/hero/hero-4.jpg"
           alt={`${business.name} CTA banner`}
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
@@ -441,7 +441,7 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
                   className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all"
                 >
                   <img
-                    src={`https://picsum.photos/seed/${business.slug}-area-card-${index}/300/200`}
+                    src={`/images/gallery/gallery-${(index % 12) + 1}.jpg`}
                     alt={`${business.name} in ${getAreaDisplayName(otherArea)}`}
                     className="w-full h-28 object-cover group-hover:scale-110 transition-transform duration-500"
                     loading="lazy"

@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import AlkapuriContent from "./AlkapuriContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 const BASE_URL = "https://vadodarahomes.in";
 const PAGE_URL = `${BASE_URL}/alkapuri-vadodara`;
@@ -67,7 +67,7 @@ export default function AlkapuriVadodaraPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <AlkapuriContent />
+      <AreaPageTemplate area="alkapuri" areaName="Alkapuri" />
     </>
   );
 }

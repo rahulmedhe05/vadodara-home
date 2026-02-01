@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import HarniContent from "./HarniContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Harni Vadodara | Flats Near Airport | Premium Homes Harni",
@@ -13,5 +13,5 @@ export const metadata: Metadata = {
 };
 
 export default function HarniVadodaraPage() {
-  return <HarniContent />;
+  return <AreaPageTemplate area="harni" areaName="Harni" />;
 }

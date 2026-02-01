@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import WaghodiaRoadContent from "./WaghodiaRoadContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property on Waghodia Road Vadodara | Student Housing & Rental Investment | 2025 Deals",
@@ -35,5 +35,5 @@ export const metadata: Metadata = {
 };
 
 export default function WaghodiaRoadPage() {
-  return <WaghodiaRoadContent />;
+  return <AreaPageTemplate area="waghodia-road" areaName="Waghodia Road" />;
 }

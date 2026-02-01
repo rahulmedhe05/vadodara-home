@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import AkotaContent from "./AkotaContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Akota Vadodara | Premium Flats Near Akota Stadium",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function AkotaVadodaraPage() {
-  return <AkotaContent />;
+  return <AreaPageTemplate area="akota" areaName="Akota" />;
 }

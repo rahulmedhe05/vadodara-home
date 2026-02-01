@@ -167,7 +167,6 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         
         {/* Preconnect to external domains for performance */}
-        <link rel="preconnect" href="https://picsum.photos" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         

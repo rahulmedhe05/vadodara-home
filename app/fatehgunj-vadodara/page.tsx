@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import FatehgunjContent from "./FatehgunjContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Fatehgunj Vadodara | Commercial & Residential Flats",
@@ -13,5 +13,5 @@ export const metadata: Metadata = {
 };
 
 export default function FatehgunjVadodaraPage() {
-  return <FatehgunjContent />;
+  return <AreaPageTemplate area="fatehgunj" areaName="Fatehgunj" />;
 }

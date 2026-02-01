@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import SubhanpuraContent from "./SubhanpuraContent";
+import { AreaPageTemplate } from "@/components/area-page-template";
 
 export const metadata: Metadata = {
   title: "Property in Subhanpura Vadodara | Family Flats & Apartments",
@@ -13,5 +13,5 @@ export const metadata: Metadata = {
 };
 
 export default function SubhanpuraVadodaraPage() {
-  return <SubhanpuraContent />;
+  return <AreaPageTemplate area="subhanpura" areaName="Subhanpura" />;
 }
