@@ -4,16 +4,17 @@ const BASE_URL = 'https://vadodarahomes.in';
 
 // All area slugs
 const areas = [
-  'alkapuri', 'gotri', 'manjalpur', 'tarsali', 'subhanpura', 'akota', 'fatehgunj',
-  'sayajigunj', 'karelibaug', 'karelibagh', 'waghodia-road', 'harni', 'sama', 'bhayli',
-  'nizampura', 'makarpura', 'race-course', 'gorwa', 'new-sama-road', 'vip-road',
-  'old-padra-road', 'tandalja', 'diwalipura', 'pratapnagar', 'sevasi', 'chhani',
-  'atladara', 'ajwa-road', 'dabhoi-road', 'productivity-road', 'refinery-road',
-  'vasna-road', 'nandesari', 'kalali', 'padra', 'vadsar-road', 'vasna-bhayli-road',
-  'vasna-bhayli', 'wadi', 'waghodia', 'bill', 'sindhrot', 'danteshwar', 'ellora-park',
-  'jetalpur', 'laxmipura', 'karodia', 'lalbaug', 'panigate', 'raopura', 'salatwada',
-  'vemali', 'vishwamitri', 'kaladarshan', 'sama-savli-road', 'kareli', 'undera',
-  'navapura', 'race-course-circle', 'new-vip-road', 'tp-13'
+  'ajwa-road', 'akota', 'alkapuri', 'atladara', 'bhayli', 'bill', 'chhani',
+  'dabhoi-road', 'danteshwar', 'diwalipura', 'ellora-park', 'fatehgunj', 'gorwa',
+  'gotri', 'harni', 'jetalpur', 'kaladarshan', 'kalali', 'kareli', 'karelibagh',
+  'karelibaug', 'karodia', 'lalbaug', 'laxmipura', 'makarpura', 'manjalpur',
+  'nandesari', 'navapura', 'new-sama-road', 'new-vip-road', 'nizampura',
+  'old-padra-road', 'padra', 'panigate', 'pratapnagar', 'productivity-road',
+  'race-course', 'race-course-circle', 'raopura', 'refinery-road', 'salatwada',
+  'sama', 'sama-savli-road', 'sayajigunj', 'sevasi', 'sindhrot', 'subhanpura',
+  'tandalja', 'tarsali', 'tp-13', 'undera', 'vadsar-road', 'vasna-bhayli',
+  'vasna-bhayli-road', 'vasna-road', 'vemali', 'villas-for-sale', 'vip-road',
+  'vishwamitri', 'wadi', 'waghodia', 'waghodia-road'
 ];
 
 // All keyword slugs
